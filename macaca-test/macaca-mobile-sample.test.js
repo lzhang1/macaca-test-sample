@@ -3,7 +3,7 @@
 var path = require('path');
 var _ = require('macaca-utils');
 
-var platform = process.env.platform || 'iOS';
+var platform = process.env.platform || 'ios';
 platform = platform.toLowerCase();
 
 var iOSOpts = {
@@ -16,8 +16,8 @@ var iOSOpts = {
 
 var androidOpts = {
   platformName: 'Android',
-  //package: 'com.github.android_app_bootstrap',
-  //activity: 'com.github.android_app_bootstrap.activity.WelcomeActivity',
+  package: 'com.github.android_app_bootstrap',
+  activity: 'com.github.android_app_bootstrap.activity.WelcomeActivity',
   app: path.join(__dirname, '..', 'app', `${platform}-app-bootstrap.zip`)
 };
 
